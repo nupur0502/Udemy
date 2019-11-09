@@ -1,20 +1,23 @@
-#Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+#Count the number of prime numbers less than a non-negative number, n.
 
 #Example:
 
-#Input: [0,1,0,3,12]
-#Output: [1,3,12,0,0]
-def removezero(nums):
-
-    i = 0
-    length = len(nums)
-    while(i<length):
-       if nums[i] == 0:
-           nums.append(nums[i])
-           del nums[i]
-           length = length - 1
-       else:
-            i = i+1
-    return nums
-print(removezero([0,0,1,0,5,5,0,7,1,0]))
-
+#Input: 10
+#Output: 4
+#Explanation: There are 4 prime numbers less than 10, they are 2, 3, 5, 7.
+def vowel(s):
+    v = ["a","e","i","o","u"]
+    s= s.lower()
+    new_s = []
+    for i in range(len(s)):
+       if s[i] in v:
+           new_s = new_s + s[i]
+    for i in range(len(s)): hello eo
+        if s[i] in v:
+            j = 0
+            s[i] = new_s[len(new_s)-j]
+            j = j +1
+    return s
+print(vowel("hello"))
+    
+    
